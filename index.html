@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Drawing app with Canvas 🎨</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="toolbox">
+      <div class="pen-box">
+        <button class="pen"><img src="pencil.png" alt="pencil" width="55px" height="55px"></button>
+        <div class="box-size">
+          <button class="decrease" id="decrease">-</button>
+          <span id="size">15</span>
+          <button class="increase" id="increase">+</button>
+        </div>
+      </div>
+      <div class="colors-box">
+        <img src="color-palette.png" alt="Color palette" width="55px" height="55px">
+        <input type="color" class="color" id="color">
+      </div>
+      <div class="eraser-box">
+        <button class="eraser"><img src="eraser.svg" alt="Eraser" width="55px" height="55px"></button>
+        <div class="box-size">
+          <button class="decrease" id="decrease">-</button>
+          <span id="size">15</span>
+          <button class="increase" id="increase">+</button>
+        </div>
+      </div>
+      <button class="clear" id="clear">Clear</button>
+    </div>
+    <canvas id="canvas" height="550px" width="750px"></canvas>
+  </div>
+
+  <div class="attribute">
+    <div class="palette-attribute">Made with ❤️ by <a href="" title="Fusion Falcons"> Fusion Falcons- Hrishabh & Jannat </a>  as Christ University Version Representatives</a>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
